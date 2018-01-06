@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Tech Support Sign Up
+    </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="mainContainer">
+      <h2>TECH SUPPORT TICKET SIGN UP</h2>
+      <form>
+        <input type="text" name="field1" placeholder="Full Name" />
+        <input type="email" name="field2" placeholder="Email" />
+        <input type="url" name="field3" placeholder="Your Server's URL" />
+
+
+        <label for="office">Your Home Office:</label><br />
+        <select id="office">
+          <option>Seattle1</option>
+          <option>Seattle2</option>
+          <option>Denver</option>
+          <option>New York</option>
+          <option>Tokyo</option>
+        </select>
+        <br />
+        <hr />
+        <label for="message">Describe the problem. Be as detailed as possible:</label><br />
+        <textarea id="message" placeholder="Message/Issue"></textarea>
+        <label for="upload">Supporting Documentation -- screenshot, error log file, etc.</label> <br />
+        <input type="file" id="upload" />
+        <input type="button" value="Submit Support Ticket" id="submit" onclick="submitMessage()" />
+
+        <script>function submitMessage() {
+            alert("Support ticket submitted. We will contact you at the email given above within 24 hours.");
+          }
+        </script>
+      </form>
+    </div>
+  </body>
+</html>
